@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka-feign-constomer
+server:
+  port: 8309
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8302/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info
+
+        
